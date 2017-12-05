@@ -2,12 +2,14 @@ apply plugin: 'java'
 apply plugin: 'application'
 
 repositories {
-    maven { url "http://dev-gosling.vistajet.local:8081/artifactory/libs-qa-local"}
+    //maven { url "http://dev-gosling.vistajet.local:8081/artifactory/libs-qa-local"}
+    maven { url "http://localhost:8081/artifactory/gradle-dev" }
 }
 
 dependencies {
     // compile 'org.slf4j:slf4j-api:1.7.25'
-    compile group: '', name: 'artifactory-test', version: '1.1.0-RELEASE'
+    //compile group: '', name: 'artifactory-test', version: '1.1.0-RELEASE'
+    compile group: '', name: 'sample-gradle', version: '1.1.0-RELEASE'
 }
 
 mainClassName = "dep.Main"
